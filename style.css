@@ -414,6 +414,11 @@ nav {
         width: 0;
     }
 
+    /* Prevent scrolling while nav is open */
+    .no-scroll {
+        overflow: hidden;
+    }
+
     /* Home-intro-section */
     .home-intro-container {
         flex-direction: column;
