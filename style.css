@@ -375,9 +375,12 @@ nav {
         height: 100vh;
         width: 100%;
         left: -100%;
-        padding: 100px 0;
         gap: 0;
-        transition: all 0.5s;
+        /* Very tiny screens */
+        overflow-y: auto;
+        justify-content: initial;
+        padding-top: 25vh;
+        transition: left 0.5s;
     }
 
     .fa-solid.fa-arrow-right-from-bracket {
@@ -414,10 +417,10 @@ nav {
         width: 0;
     }
 
-    /* Prevent scrolling while nav is open */
     .no-scroll {
         overflow: hidden;
     }
+
 
     /* Home-intro-section */
     .home-intro-container {
