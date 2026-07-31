@@ -738,10 +738,6 @@ nav {
         gap: 40px;
     }
 
-    .home-intro-subtext {
-        margin-bottom: 10px;
-    }
-
     /* Why Choose */
     .why-choose-container {
         width: 90%;
@@ -763,6 +759,15 @@ nav {
     /* Call to action */
     .cta{
         padding: 90px 0;
+    }
+
+    /* Footer */
+    .footer-container {
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
     }
 
 }
