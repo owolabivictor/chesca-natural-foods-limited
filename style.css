@@ -11,8 +11,17 @@ body {
     min-width: 280px;
 }
 
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
 h2 {
     font-size: clamp(30px, 6vw, 40px);
+}
+
+p {
+    line-height: 35px;
 }
 
 .button {
@@ -242,7 +251,6 @@ nav {
 }
 
 .home-intro-subtext {
-    line-height: 35px;
     margin-bottom: 25px;
 }
 
@@ -271,7 +279,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 50px 0 70px;
 }
 
 .why-choose-container {
@@ -334,9 +342,92 @@ nav {
     font-weight: bold;
 }
 
-.card-text {
-    line-height: 35px;
+/* Featured product section */
+.featured-products-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
+
+.featured-products-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 86%;
+    max-width: 1400px;
+}
+
+.featured-section-heading {
+    color: rgb(4, 116, 60);
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.featured-section-heading::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 180px;
+    height: 2px;
+    border-radius: 2px;
+    background: #D4AF37;
+}
+
+.featured-products-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.featured-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px 0;
+}
+
+.featured-description {
+    flex: 1;
+}
+
+.featured-description h3 {
+    margin-bottom: 20px;
+}
+
+.featured-description p {
+    margin-bottom: 20px;
+}
+
+.featured-product-btn {
+    display: inline;
+}
+
+.featured-product-image-container{
+    flex: 1;
+    max-width: 400px;
+}
+
+.featured-product-image {
+    max-width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.featured-product-image img {
+    width: 100%;
+}
+
 
 /* CSS Scroll reveal animations */
 .reveal.up{
@@ -459,4 +550,18 @@ nav {
     .why-choose-container {
         width: 90%;
     }
+
+    /* Featured Product Section */
+    .featured-products-section-container {
+        width: 90%;
+    }
+
+    .featured-product {
+        flex-direction: column;
+    }
+
+    .featured-product.product-2{
+        flex-direction: column-reverse;
+    }
+
 }
