@@ -191,7 +191,7 @@ nav {
 }
 
 .hero-subtext {
-    font-size: clamp(16px, 4vw, 23px);
+    font-size: clamp(18px, 4vw, 23px);
     color: #e0e0e0;
     margin-bottom: 15px;
 }
@@ -325,19 +325,18 @@ nav {
     background: white;
     padding: 25px 15px 15px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     border-left: 3px solid #D4AF37;
 }
 
-.why-choose-card .fa-solid {
+.why-choose-card i {
     color: rgb(4, 116, 60);
-    font-size: 20px;
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 .card-title {
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 /* Featured product section */
@@ -492,10 +491,11 @@ nav {
 
 .cta-btn-secondary{
     text-decoration: none;
-    padding: 12px 20px;
-    color: white;
+    padding: 11px 20px;
     border: 1px solid #C9A227;
     border-radius: 5px;
+    color: white;
+    background: rgba(0, 0, 0, 0.219);
     transition: background 0.3s;
 }
 
