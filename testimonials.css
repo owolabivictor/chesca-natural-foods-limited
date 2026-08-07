@@ -1,6 +1,6 @@
 .testimonial-hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background: url("media/testimonial-bg.png");
     background-size: cover;
     background-position: center;
@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0;
 }
 
 .testimonial-overlay {
@@ -27,10 +26,10 @@
     max-width: 850px;
     text-align: center;
     color: white;
+    padding: 250px 0;
 }
 
 .testimonial-hero h1 {
-    font-size: clamp(40px, 7vw, 55px);
     margin-bottom: 10px;
 }
 
@@ -132,7 +131,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 25%;
     max-width: 150px;
     height: 2px;
     border-radius: 2px;
@@ -324,6 +323,9 @@
         width: 90%;
         flex-direction: column;
         gap: 40px;
+    }
+
+    .testimonial-intro-text h2 {
         text-align: center;
     }
 
@@ -355,6 +357,10 @@
 
     .testimonial-cta {
         padding: 90px 0;
+    }
+
+    .testimonial-secondary-btn{
+        padding: 9px 18px;
     }
 
 }
