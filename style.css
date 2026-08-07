@@ -245,11 +245,11 @@ nav {
 
 .home-intro-text h2 {
     color: rgb(4, 116, 60);
-    font-size: clamp(30px, 6vw, 40px);
+    margin-bottom: 10px;
 }
 
 .home-intro-subtitle {
-    margin: 10px 0 20px;
+    margin-bottom: 20px;
     font-size: clamp(20px, 6vw, 25px);
     font-weight: bold;
 }
@@ -371,7 +371,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    max-width: 180px;
+    max-width: 150px;
     height: 2px;
     border-radius: 2px;
     background: #D4AF37;
