@@ -1,13 +1,13 @@
 const reveal = document.querySelectorAll(".reveal")
 
-// Why choose card staggered reveal. Start
-const cards = document.querySelectorAll(".why-choose-card");
+// Transition delay for grid. Staggered reveal
+const stagger = document.querySelectorAll(".stagger");
 
-cards.forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.1}s`;
+stagger.forEach((item, index) => {
+    item.style.transitionDelay = `${index * 0.1}s`;
 });
-// stop
 
+// Reveal on scroll
 window.addEventListener("scroll", revealItem)
 
 function revealItem(){
